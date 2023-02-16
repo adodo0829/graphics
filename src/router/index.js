@@ -17,22 +17,26 @@ const router = createRouter({
     },
     {
       path: "/canvas",
+      name: "Canvas",
       component: Canvas,
       redirect: "/canvas01",
       children: [
         {
           path: "/canvas01",
+          name: "Canvas-01",
           component: Canvas01,
         },
       ],
     },
     {
       path: "/webgl",
+      name: "WebGL",
       component: WebGL,
       redirect: "/webgl01",
       children: [
         {
           path: "/webgl01",
+          name: "WebGL-01",
           component: WebGL01,
         },
       ],
