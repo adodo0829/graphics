@@ -4,7 +4,9 @@ import { createRouter, createWebHistory } from "vue-router";
 const routerHistory = createWebHistory();
 
 import Canvas from "@/pages/Canvas/index.vue";
-import Canvas01 from "@/pages/Canvas/Chaptor01/index.vue";
+import Canvas01 from "@/pages/Canvas/Ch01/index.vue";
+import Canvas02 from "@/pages/Canvas/Ch02/index.vue";
+
 import WebGL from "@/pages/WebGL/index.vue";
 import WebGL01 from "@/pages/WebGL/Chaptor01/index.vue";
 
@@ -25,6 +27,11 @@ const router = createRouter({
           path: "/canvas01",
           name: "Canvas-01",
           component: Canvas01,
+        },
+        {
+          path: "/canvas02",
+          name: "Canvas-02",
+          component: Canvas02,
         },
       ],
     },
